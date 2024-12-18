@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="vmpayment">
+    <name>Paymentjoomla_v5</name>
+    <author>paymentjoomla_v4</author>
+    <version>1.0.0</version>
+    <description>A Paymentjoomla_v5 payment plugin for VirtueMart.</description>
+    <files>
+        <filename plugin="paymentjoomla_v5">paymentjoomla_v5.php</filename>
+    </files>
+    <vmconfig>
+        <fields name="params">
+            <fieldset name="payment" addfieldpath="/administrator/components/com_virtuemart/fields">
+                <field
+                    name="merchant_id"
+                    type="text"
+                    label="Merchant ID"
+                    description="Enter your merchant ID."
+                />
+                <field
+                    name="test_url"
+                    type="text"
+                    label="Test URL"
+                    description="Enter the Test URL for payment processing."
+                />
+                <field
+                    name="partner_name"
+                    type="text"
+                    label="Partner Name"
+                    description="Enter the Parner Name for payment processing."
+                />
+                <field
+                    name="secret_key"
+                    type="text"
+                    label="Secret Key"
+                    description="Enter the Secret Key for payment processing."
+                />
+                <field
+                    name="redirect_url"
+                    type="text"
+                    label="Redirect URL"
+                    description="Enter the Rediect URL for payment processing."
+                />
+            </fieldset>
+        </fields>
+    </vmconfig>
+</extension>
